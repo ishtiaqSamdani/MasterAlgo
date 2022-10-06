@@ -1,0 +1,146 @@
+:root{
+    --brand-clr_:#233dd2;
+    --heading-clr_:#040b33;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 5rem;
+}
+.icon_{
+    margin: 0 .25rem 0 0;
+    translate: 0rem .25rem;
+    transition: all .5s ease;
+}
+
+h4 .icon_:hover{
+    animation: rotation 2s linear infinite;
+}
+.highlight_text{
+    color:#10f02e;
+    position: relative;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.underline_{
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 100%;
+}
+.brand_{
+    color:#ffffff;
+    font-weight:bold;
+    transition: scale 500ms ease;
+    
+    /* animation: tada 1000ms forwards; */
+}
+.brand_:hover{
+    scale: 1.1;
+}
+.custom_row{
+    /* gap:.5rem; */
+}
+.content_cards{
+    padding:2rem 3rem;
+    /* border:1px solid hotpink; */
+    cursor:pointer;
+    border-radius: .25em;
+    transition: box-shadow .3s ease-in-out;
+}
+.content_cards:hover{
+    box-shadow: 0 0 35px -2px rgb(0 0 0 / 20%);
+}
+.content_heading{
+    font-weight:bold;
+    color:var(--heading-clr);
+}
+.heading_what_is{
+    /* font-size: 1.5rem; */
+    font-weight: bold;
+    /* color: #10f02e; */
+}
+.content_icons{
+    transition: color 250ms ease-in-out;
+}
+.content_cards:hover .content_icons{
+    color:#233dd2;
+}
+.details_{
+}
+.ball_{
+    animation: ball_move 4s ease infinite;
+    transition: translate 500ms ease;
+}
+.ball_2{
+    animation: ball_move 3s ease-in-out infinite;
+    transition: translate 500ms ease;
+}
+
+.testimonials_card{
+    padding:2rem 5rem;
+    /* border:2px solid hotpink; */
+    cursor:pointer;
+    border-radius: .25em;
+    background-color: #040b33;
+    color:rgb(216, 212, 212);
+}
+.person_name{
+    font-weight:bold;
+    color:var(--heading-clr);
+    text-align: center;
+    margin:0 0 .5rem 0;
+}
+.person_img_div{
+    display: grid;
+    place-content: center;
+}
+.person_img{
+    width:5rem;
+}
+.testmonials_details{
+
+}
+
+
+
+
+
+/* @keyframes tada{
+    0%{
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    }
+    100%{
+        clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    }
+} */
+
+
+@keyframes ball_move{
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(.175rem,.175rem);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+@keyframes rotation {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+@media screen and (max-width: 368px) {
+    .brand_{
+        font-size: 1.5rem;
+    }
+    .testimonials_card{
+        padding:1rem 2.25rem;
+        margin:0 0 3rem 0;
+    }
+}
