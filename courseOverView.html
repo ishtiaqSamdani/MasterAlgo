@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+    <!-- <link rel="icon" type="image/png" href="./assets/img/"> -->
+    <title>
+        MASTERALGO | Competitive Coding
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <!-- Nucleo Icons -->
+    <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <link href="./assets/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/customstyles.css">
+    <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link href="./assets/css/argon-design-system.css?v=1.2.2" rel="stylesheet" />
+</head>
+
+<body class="index-page">
+    <!-- Navbar -->
+    <nav id="navbar-main" style="z-index: 10000;"
+        class="navbar navbar-main navbar-expand-lg bg-white navbar-light position-sticky top-0 shadow py-2">
+        <div class="container">
+            <a class="navbar-brand mr-lg-5" href="./index.html">
+                <!-- <img src=""> -->
+                <h4 style="color:#233dd2;font-weight:bold"><i class="ni ni-atom icon_"></i>MasterALgo</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
+                aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar_global">
+                <div class="navbar-collapse-header">
+                    <div class="row">
+                        <div class="col-8 collapse-brand">
+                            <a href="./index.html">
+                                <h5 style="color:#233dd2;font-weight:bold"><i class="ni ni-atom icon_"></i>MasterALgo
+                                </h5>
+                            </a>
+                        </div>
+                        <div class="col-4 collapse-close">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="navbar-nav navbar-nav-hover align-items-lg-right">
+                    <li class="nav-item dropdown">
+                        <a href="./products.html" class="nav-link" data-toggle="" href="#" role="button">
+                            <i class="ni ni-ui-04 d-lg-none"></i>
+                            <span class="nav-link-inner--text">Products</span>
+                        </a>
+                        
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#content" class="nav-link" role="button">
+                            <i class="ni ni-collection d-lg-none"></i>
+                            <span class="nav-link-inner--text">content</span>
+                        </a>
+                        <!-- <div class="dropdown-menu">
+              <a href="./examples/landing.html" class="dropdown-item">Landing</a>
+              <a href="./examples/profile.html" class="dropdown-item">Profile</a>
+              <a href="./examples/login.html" class="dropdown-item">Login</a>
+              <a href="./examples/register.html" class="dropdown-item">Register</a>
+            </div> -->
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" href="#" role="button">
+                            <i class="ni ni-collection d-lg-none"></i>
+                            <span class="nav-link-inner--text">about us</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#testimonials" class="nav-link" role="button">
+                            <i class="ni ni-collection d-lg-none"></i>
+                            <span class="nav-link-inner--text">Testimonials</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+                    <li class="nav-item">
+                        <a href="#" class="btn btn-primary btn-icon">
+                            <span class="btn-inner--icon">
+                                <i class="ni ni-spaceship"></i>
+                            </span>
+                            <span class="nav-link-inner--text" data-toggle="modal"
+                                data-target="#modal-signin">Login</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="modal-signin" tabindex="-1" role="dialog" aria-labelledby="modal-form"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="card bg-secondary shadow border-0 mb-0">
+                        <div class="card-header bg-white pb-5">
+                            <div class="text-muted text-center mb-3">
+                                <small>Sign in with</small>
+                            </div>
+                            <div class="btn-wrapper text-center">
+                                <a href="javascript:;" class="btn btn-neutral btn-icon">
+                                    <span class="btn-inner--icon">
+                                        <img src="./assets/img/icons/common/github.svg">
+                                    </span>
+                                    <span class="btn-inner--text">Github</span>
+                                </a>
+                                <a href="javascript:;" class="btn btn-neutral btn-icon">
+                                    <span class="btn-inner--icon">
+                                        <img src="./assets/img/icons/common/google.svg">
+                                    </span>
+                                    <span class="btn-inner--text">Google</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-body px-lg-5 py-lg-5">
+                            <div class="text-center text-muted mb-4">
+                                <small>Or sign in with credentials</small>
+                            </div>
+                            <form role="form">
+                                <div class="form-group mb-3">
+                                    <div class="input-group input-group-alternative">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                                        </div>
+                                        <input class="form-control" placeholder="Email" type="email">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group input-group-alternative">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="ni ni-diamond"></i></span>
+                                        </div>
+                                        <input class="form-control" placeholder="Password" type="password">
+                                    </div>
+                                </div>
+                                <div class="custom-control custom-control-alternative custom-checkbox">
+                                    <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
+                                    <label class="custom-control-label" for=" customCheckLogin">
+                                        <span>Remember me</span>
+                                    </label>
+                                </div>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-primary my-4">Sign in</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar -->
+    <div class="wrapper">
+        <div class="section section-hero section-shaped">
+            <div class="shape shape-style-1 shape-primary shape_color_change">
+                <span class="span-150 ball_"></span>
+                <span class="span-50  ball_2"></span>
+                <span class="span-50  ball_2"></span>
+                <span class="span-75  ball_"></span>
+                <span class="span-100  ball_"></span>
+                <span class="span-75  ball_2"></span>
+                <span class="span-50  ball_2"></span>
+                <span class="span-100  ball_"></span>
+                <span class="span-50  ball_2"></span>
+                <span class="span-100  ball_"></span>
+            </div>
+            <div class="page-header">
+                <div class="container shape-container d-flex align-items-center py-lg">
+                    <div class="col px-0">
+                        <div class="row align-items-center justify-content-center">
+                            <div style="cursor:pointer" class="col-lg-6 text-center">
+                                <!-- <img src="" style="width: 200px;" class="img-fluid"> -->
+                                <a class="navbar-brand mr-lg-5" href="./index.html">
+                                    <!-- <img src=""> -->
+                                    <h1 class="brand_">Competitive Coding</h2>
+                                </a>
+                                <p class="lead text-white anime_">competitive coding to <span class="highlight_text">
+                                        <img class="underline_" src="./assets/img/customimages/underlineaccent.svg"
+                                            alt=""> crack Interviews</span></p>
+                                <div class="btn-wrapper mt-5">
+                                    <!-- <a href="#" class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0 anime_
+                    <span class="btn-inner--icon"><i class="ni ni-cloud-download-95"></i></span>
+                    <span class="btn-inner--text">See courses</span>
+                  </a> -->
+                                    <!-- <a href="#" class="btn btn-lg btn-outline-white btn-icon mb-3 mb-sm-0 anime_" target="_blank">
+                    <span class="btn-inner--icon"><i class="ni ni-cart"></i> </span>
+                    <span class="btn-inner--text">Buy Course</span>
+                  </a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="separator separator-bottom separator-skew zindex-100">
+                <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="learning_content">
+            <h1 style="text-transform: uppercase;font-weight:bold">Contents</h1>
+            <div class="learining_content_cards">
+                <div class="learning_card">
+                    <h4 class="learning_card_title"><i class="ni ni-check-bold icon_2"></i>heading content</h3>
+                        <img src="" alt="" class="learning_card_img">
+                        <p>Lorem, ipsum. Lorem, ipsum dolor. Lorem, ipsum dolor.</p>
+                </div>
+                <div class="learning_card">
+                    <h4 class="learning_card_title"><i class="ni ni-check-bold icon_2"></i>heading content</h3>
+                        <img src="" alt="" class="learning_card_img">
+                        <p>Lorem, ipsum. Lorem, ipsum dolor. Et, eligendi id.</p>
+                </div>
+                <div class="learning_card">
+                    <h4 class="learning_card_title"><i class="ni ni-check-bold icon_2"></i>heading content</h3>
+                        <img src="" alt="" class="learning_card_img">
+                        <p>Lorem, ipsum. Lorem, ipsum dolor. Quis, laudantium vero!</p>
+                </div>
+                <div class="learning_card">
+                    <h4 class="learning_card_title"><i class="ni ni-check-bold icon_2"></i>heading content</h3>
+                        <img src="" alt="" class="learning_card_img">
+                        <p>Lorem, ipsum. Lorem, ipsum dolor. Impedit, nisi quibusdam!</p>
+                </div>
+                <div class="learning_card">
+                    <h4 class="learning_card_title"><i class="ni ni-check-bold icon_2"></i>heading content</h3>
+                        <img src="" alt="" class="learning_card_img">
+                        <p>Lorem, ipsum. Lorem, ipsum dolor. Odit, voluptatem ipsa.</p>
+                </div>
+                <div class="learning_card">
+                    <h4 class="learning_card_title"><i class="ni ni-check-bold icon_2"></i>heading content</h3>
+                        <img src="" alt="" class="learning_card_img">
+                        <p>Lorem, ipsum. Lorem, ipsum dolor. Placeat, omnis labore?</p>
+                </div>
+            </div>
+            <div class="learning_content_img">
+                <!-- <img src="./assets/img/illustartions/codethinking.svg" alt="" class="codethinking_img"> -->
+                <h1 class="accent_">Coding</h1>
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <section class="section section-lg section-shaped mt-9">
+        <div class="shape shape-style-1 shape-default">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="container py-md">
+            <div class="row row-grid justify-content-between align-items-center">
+                <div class="col-lg-6">
+                    <h1 style="text-transform: uppercase;font-weight:bold;color:white">Take Away Skills</h1>
+                    <div class="skills_Section" style="color:white">
+                        <div class="skills_box">
+                            <!-- <img src="" alt="" class="skill_img"> -->
+                            <p class="skills_content"><i class="ni ni-book-bookmark icon_2"></i>Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="skills_box">
+                            <!-- <img src="" alt="" class="skill_img"> -->
+                            <p class="skills_content"><i class="ni ni-book-bookmark icon_2"></i>Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="skills_box">
+                            <!-- <img src="" alt="" class="skill_img"> -->
+                            <p class="skills_content"><i class="ni ni-book-bookmark icon_2"></i>Lorem, ipsum dolor.</p>
+                        </div>
+                        <div class="skills_box">
+                            <!-- <img src="" alt="" class="skill_img"> -->
+                            <p class="skills_content"><i class="ni ni-book-bookmark icon_2"></i>Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-lg-auto">
+                    <div class="skills_img_container d-none d-lg-block">
+                        <img src="./assets/img/ill/ill.png" alt="" class="skill_left_img">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SVG separator -->
+        <div class="separator separator-bottom separator-skew">
+            <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+    </section>
+
+    <div class="container mt-9">
+        <!-- flex direction row -->
+
+        <div class="row courseOverview_section hover:">
+            <h4 style="text-transform: uppercase;font-weight:bold" class="col-lg-4 courseOverview_section_box">course
+                OverView</h4>
+            <div style="line-height: 1.6rem;" class="col-lg-8 courseOverview_section_box">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Ad eius eum aspernatur laudantium. Natus quos id illo ratione? Voluptatibus libero exercitationem
+                adipisci minima assumenda nesciunt sapiente magnam ipsa, quos quis. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Necessitatibus, culpa? Tempora veritatis, natus suscipit recusandae est
+                quia molestiae eum rerum?</div>
+
+        </div>
+    </div>
+
+    <div class="container mt-9">
+        <div class="course_content row">
+            <i class="ni ni-atom icon_2 d-none d-md-block"></i>
+            <div class="course_content_heading col-md-4">
+                <h4 style="text-transform: uppercase;font-weight:bold">Course Content <i class="ni ni-bold-right icon_2"></i> </h4>
+            </div>
+            <div class="course_content_tree col-md-8">
+                <div>
+                    <ul class="tree">
+                        <li> <i class="ni ni-bulb-61 icon_2"></i> Binary Exponentiation</li>
+                        <li> <i class="ni ni-bulb-61 icon_2"></i> Binary Exponentiation</li>
+                        <li> <i class="ni ni-bulb-61 icon_2"></i> Extended Eculidean Algorithm</li>
+                        <li> <i class="ni ni-bulb-61 icon_2"></i> prime number
+                            <ul>
+                                <li> <i class="ni ni-bulb-61 icon_2"></i> sieve of Eraosthenes</li>
+                                <li> <i class="ni ni-bulb-61 icon_2"></i> Linear sieve</li>
+                            </ul>
+                        </li>
+                        <li> <i class="ni ni-bulb-61 icon_2"></i> Binary Exponentiation</li>
+                        <li> <i class="ni ni-bulb-61 icon_2"></i> Extended Eculidean Algorithm</li>
+                        <li> <i class="ni ni-bulb-61 icon_2"></i> Binary Exponentiation</li>
+                        <li> <i class="ni ni-bulb-61 icon_2"></i> prime number
+                            <ul>
+                                <li> <i class="ni ni-bulb-61 icon_2"></i> sieve of Eraosthenes</li>
+                                <li> <i class="ni ni-bulb-61 icon_2"></i> Linear sieve</li>
+                            </ul>
+                        </li>
+                        <li> <i class="ni ni-bulb-61 icon_2"></i> Extended Eculidean Algorithm</li>
+                        <li> <i class="ni ni-bulb-61 icon_2"></i> prime number
+                            <ul>
+                                <li> <i class="ni ni-bulb-61 icon_2"></i> sieve of Eraosthenes</li>
+                                <li> <i class="ni ni-bulb-61 icon_2"></i> Linear sieve</li>
+                            </ul>
+                        </li>
+                        <li> <i class="ni ni-bulb-61 icon_2"></i> Number theretic functions
+                            <ul>
+                                <li> <i class="ni ni-bulb-61 icon_2"></i> sieve of Eraosthenes</li>
+                                <li> <i class="ni ni-bulb-61 icon_2"></i> Linear sieve</li>
+                            </ul>
+                        </li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+<div class="container_close">
+    <div class="container mt-9">
+        <div class="targetted_companies">
+            <h2 style="text-transform: uppercase;font-weight:bold">Targeted Companies</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="targetted_companies_box">
+                        <img src="./assets/img/targetedcompanies/amazon.png" alt="" class="targetted_companies_img">
+                    </div>
+                    <div class="targetted_companies_box">
+                        <img src="./assets/img/targetedcompanies/amazon.png" alt="" class="targetted_companies_img">
+                    </div>
+                    <div class="targetted_companies_box">
+                        <img src="./assets/img/targetedcompanies/amazon.png" alt="" class="targetted_companies_img">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="targetted_companies_box">
+                        <img src="./assets/img/targetedcompanies/amazon.png" alt="" class="targetted_companies_img">
+                    </div>
+                    <div class="targetted_companies_box">
+                        <img src="./assets/img/targetedcompanies/amazon.png" alt="" class="targetted_companies_img">
+                    </div>
+                    <div class="targetted_companies_box">
+                        <img src="./assets/img/targetedcompanies/amazon.png" alt="" class="targetted_companies_img">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="targetted_companies_box">
+                        <img src="./assets/img/targetedcompanies/amazon.png" alt="" class="targetted_companies_img">
+                    </div>
+                    <div class="targetted_companies_box">
+                        <img src="./assets/img/targetedcompanies/amazon.png" alt="" class="targetted_companies_img">
+                    </div>
+                    <div class="targetted_companies_box">
+                        <img src="./assets/img/targetedcompanies/amazon.png" alt="" class="targetted_companies_img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+    <footer class="footer has-cards">
+
+        <div class="container">
+            <div class="row row-grid align-items-center my-md">
+                <div class="col-lg-6">
+                    <h3 class="text-primary font-weight-light mb-2">Thank you for supporting us!</h3>
+                    <h4 class="mb-0 font-weight-light">Let's get in touch on any of these platforms.</h4>
+                </div>
+                <div class="col-lg-6 text-lg-center btn-wrapper">
+                    <button target="_blank" href="#" rel="nofollow" class="btn btn-icon-only btn-twitter rounded-circle"
+                        data-toggle="tooltip" data-original-title="Follow us">
+                        <span class="btn-inner--icon"><i class="fa fa-twitter"></i></span>
+                    </button>
+                    <button target="_blank" href="#" rel="nofollow"
+                        class="btn-icon-only rounded-circle btn btn-facebook" data-toggle="tooltip"
+                        data-original-title="Like us">
+                        <span class="btn-inner--icon"><i class="fab fa-facebook"></i></span>
+                    </button>
+                    <button target="_blank" href="#" rel="nofollow"
+                        class="btn btn-icon-only btn-dribbble rounded-circle" data-toggle="tooltip"
+                        data-original-title="Follow us">
+                        <span class="btn-inner--icon"><i class="fa fa-dribbble"></i></span>
+                    </button>
+                    <button target="_blank" href="#" rel="nofollow" class="btn btn-icon-only btn-github rounded-circle"
+                        data-toggle="tooltip" data-original-title="Star on Github">
+                        <span class="btn-inner--icon"><i class="fa fa-github"></i></span>
+                    </button>
+                </div>
+            </div>
+            <hr>
+            <div class="row align-items-center justify-content-md-between">
+                <div class="col-md-6">
+                    <div class="copyright">
+                        &copy; 2021 <a href="" target="_blank">MasterALgo</a>.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="nav nav-footer justify-content-end">
+                        <li class="nav-item">
+                            <a href="" class="nav-link" target="_blank">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link" target="_blank">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link" target="_blank">License</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <!--   Core JS Files   -->
+    <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+    <script src="./assets/js/plugins/bootstrap-switch.js"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+    <script src="./assets/js/plugins/moment.min.js"></script>
+    <script src="./assets/js/plugins/datetimepicker.js" type="text/javascript"></script>
+    <script src="./assets/js/plugins/bootstrap-datepicker.min.js"></script>
+    <!-- Control Center for Argon UI Kit: parallax effects, scripts for the example pages etc -->
+    <!--  Google Maps Plugin    -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+    <script src="./assets/js/argon-design-system.min.js?v=1.2.2" type="text/javascript"></script>
+    <script>
+        function scrollToDownload() {
+
+            if ($('.section-download').length != 0) {
+                $("html, body").animate({
+                    scrollTop: $('.section-download').offset().top
+                }, 1000);
+            }
+        }
+    </script>
+    <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+    <script>
+        window.TrackJS &&
+            TrackJS.install({
+                token: "ee6fab19c5a04ac1a32a645abde4613a",
+                application: "argon-design-system-pro"
+            });
+    </script>
+</body>
+
+</html>
