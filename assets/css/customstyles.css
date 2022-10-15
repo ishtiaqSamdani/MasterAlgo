@@ -220,11 +220,12 @@ h4 .icon_:hover{
     width: 100%;
 }
 .courseOverview_section{
-    border:2px solid #233dd2;
-    border-radius: .25em;
+    border: .25rem solid;
+    border-radius: 1em;
     min-height: 30vh;
     cursor: pointer;
-    
+    border-image-slice: 1;
+    border-image-source: linear-gradient(150deg, #493ee2 15%, #6ed5d0 70%, #efd321 94%)!important;
 }
 .courseOverview_section_box{
     padding:2rem;
@@ -405,11 +406,114 @@ h4 .icon_:hover{
     object-fit: contain;
     border-radius: 50%;
 }
-/* .aws_cracked_name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
+.vertical_progress{
+    --number:"1";
+    --col-row-number:1;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6,1fr);
+    gap: 1rem;
+    grid-column-gap: 5rem;
+}
+.vertical_progress > *{
+    position: relative;
+    padding:2rem 1rem;
+    border-radius: .25em;
+    background: linear-gradient(150deg, #3a5cca 15%, #1fa1c9 70%, #555abf 94%);
+    color:white;
+}
+.vertical_progress > *::after{
+    display: grid;
+    place-items: center;
+}
+.progress_cards:nth-child(2n+1){
+    grid-column: 1/span 1;
+    grid-row: var(--col-row-number)/span 1;
+}
+.progress_cards:nth-child(2n){
+    grid-column: 2/span 1;
+    grid-row: var(--col-row-number)/span 1;
+}
+.progress_cards:nth-child(2n+1)::after{
+    content: var(--number);
+    position: absolute;
+    bottom: 50%;
+    right:0;
+    translate: calc(100% + 1.5rem) 50%;
+    width:2rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: rebeccapurple;
+    color:white;
+}
+.progress_cards:not(:last-child):nth-child(2n+1)::before{
+    content:'';
+    position: absolute;
+    right:0;
+    top:0;
+    height: calc(100% + .5rem);
+    width: 3px;
+    background-color: rgba(53, 16, 90, 0.37);
+    translate: calc(50% + 2.5rem) 50%;
+}
+.progress_cards:nth-child(2n)::after{
+    content: var(--number);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    translate: calc(-1 * calc(100% + 1.5rem)) -50%;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: rebeccapurple;
+    color: white;
+}
+.progress_cards:not(:last-child):nth-child(2n)::before{
+    content:'';
+    position: absolute;
+    left:0;
+    top:0;
+    height: calc(100% + .5rem);
+    width: 3px;
+    background-color: rgba(53, 16, 90, 0.37);
+    translate:calc(-1 * calc(50% + 2.5rem)) 50%;
+}
+
+@media screen and (max-width:767px) {
+    .vertical_progress{
+        display: block;
+    }
+    .vertical_progress > *{
+        margin:0 0 1rem 3rem;
+    }
+    /* .vertical_progress>*::after,.vertical_progress>*::before{
+        display: none;
+    } */
+    .progress_cards:nth-child(n)::after{
+        content: var(--number);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        translate: calc(-1 * calc(100% + 1.5rem)) -50%;
+        width: 2rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        background-color: rebeccapurple;
+        color: white;
+    }
+    .progress_cards:not(:last-child):nth-child(n)::before{
+        content:'';
+        position: absolute;
+        left:0;
+        top:0;
+        height: calc(100% + .5rem);
+        width: 3px;
+        background-color: rgba(53, 16, 90, 0.37);
+        translate:calc(-1 * calc(50% + 2.5rem)) 50%;
+    }
+    
+}
+
 @media screen and (max-width: 992px) {
     .learining_content_cards{
       grid-template-columns: repeat(2, 1fr);
